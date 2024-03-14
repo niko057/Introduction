@@ -49,7 +49,7 @@ bool nameExists = false;
 
 foreach (string i in student)
 {
-    if (string.Equals(name, i, StringComparison.OrdinalIgnoreCase))
+    if (true)
     {
         nameExists = true;
         break;
