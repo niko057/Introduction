@@ -39,31 +39,29 @@
 
 
 string[] student = {"Ali","Nicat","Pasa","Vuqar","Aziz"};
-
+l1:
 Console.WriteLine("Adinizi daxil edin:");
 
 string name=Console.ReadLine();
 
-bool nameExists = false;
-
-
-foreach (string i in student)
+int count = 0;
+foreach (string s in student)
 {
-    if (true)
+    if (name == s)
     {
-        nameExists = true;
-        break;
+        count++;
     }
 }
+    if (count >= 1)
+    {
+        Console.WriteLine($"Telebenin adi:{name}");
+    }
+    else
+    {
+        Console.WriteLine($"Bu adda telebe yoxdu:{name}");
+        goto l1;
+    }
 
-if (nameExists)
-{
-    Console.WriteLine($"Telebenin adı: {name}");
-}
-else
-{
-    Console.WriteLine($"Bu adda telebe tapilmadi:{name}");
-}
 
 
 
